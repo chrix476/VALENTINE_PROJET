@@ -27,6 +27,13 @@ envelope.onclick = () => {
   loveMessage.style.display = "block";
 };
 
+const nameFall = document.getElementById("nameFall");
+envelope.onclick = () => {
+  envelopeBox.style.display = "none";
+  loveMessage.style.display = "none";
+  nameFall.style.display = "block";
+};
+
 function createConfetti() {
   for (let i = 0; i < 60; i++) {
     const confetti = document.createElement("div");
@@ -41,3 +48,8 @@ function createConfetti() {
     }, 4000);
   }
 }
+
+
+
+
+
