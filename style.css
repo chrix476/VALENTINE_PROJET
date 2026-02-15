@@ -24,6 +24,13 @@ h1 {
   margin-bottom: 30px;
 }
 
+.name-fall {
+
+  font-size: 44px;
+  display: none;
+  animation: fallName 1.5s ease;
+}
+
 .buttons {
   display: flex;
   justify-content: center;
@@ -105,6 +112,12 @@ button {
   to { transform: translateY(100vh) rotate(360deg); }
 }
 
+@keyframes fallName {
+
+  from { transform: translateY(-200px); opacity: 0;}
+  to { transform: translateY(0); opacity: 1;}
+}
+
 @keyframes fadeIn {
   from { opacity: 0; transform: scale(0.8); }
   to { opacity: 1; transform: scale(1); }
@@ -121,3 +134,4 @@ button {
   50% { transform: translateY(-20px); }
   100% { transform: translateY(0); }
 }
+
